@@ -1,0 +1,73 @@
+# SavvyStudy
+Savvy the snakes study website
+
+<html lang="en">
+<head>
+     <meta charset="utf-8">
+      <title>Savvy Snake</title>
+
+       
+    <link rel="stylesheet" href="styles.css">
+
+<style>
+    body {
+        background-color: FloralWhite; 
+        text-align: center;
+        }
+    </style>
+</head>
+    
+    
+<body>
+
+<div class="container">
+    <div class="left">
+        <h1 style="font-family: Optima;">Savvy the Snake</h1>
+        
+        <h3>Welcome to the Savvy Studying!</h3>
+        
+        <p>
+        While this website is primarily designed for a junior cycle student, 
+        there are some resources that senior cycle students can avail of aswell
+        </p>
+    </div>
+
+<div class="right">
+
+<img src="https://i.pinimg.com/1200x/45/c6/f0/45c6f04bf951dd20a57a158192d9ee1f.jpg"
+          alt="savvysnake" width="200" height="600" class='left'>
+    
+
+
+<button class="button">Study Sources</button>
+<button class="button2">Study Timer</button>
+
+</div>
+     
+<script>
+    const button = document.querySelector(".button");
+
+    button.addEventListener("click", () => {
+        button.classList.add("animate");
+
+    setTimeout(() => {
+        button.classList.remove("animate");
+        window.location.href = "resources/resource.html";
+
+        }, 600) // 1s = 1000ms
+    });
+
+const button2 = document.querySelector(".button2");
+
+        button2.addEventListener("click", () => {
+            button2.classList.add("animate");
+
+            setTimeout(() => {
+                button2.classList.remove("animate");
+                window.location.href = "timer/timer.html";
+
+            }, 600) // 1s = 1000ms
+        });
+    </script>
+</body>
+</html>
